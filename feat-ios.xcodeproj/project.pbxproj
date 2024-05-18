@@ -10,11 +10,22 @@
 		28A6F0C32BF8AF8D0051D20B /* feat_iosApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28A6F0C22BF8AF8D0051D20B /* feat_iosApp.swift */; };
 		28A6F0C52BF8AF8E0051D20B /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28A6F0C42BF8AF8E0051D20B /* ContentView.swift */; };
 		28A6F0C72BF8AF8E0051D20B /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28A6F0C62BF8AF8E0051D20B /* Item.swift */; };
-		28A6F0C92BF8AF8F0051D20B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 28A6F0C82BF8AF8F0051D20B /* Assets.xcassets */; };
 		28A6F0CD2BF8AF8F0051D20B /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 28A6F0CC2BF8AF8F0051D20B /* Preview Assets.xcassets */; };
 		28A6F0D72BF8AF8F0051D20B /* feat_iosTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28A6F0D62BF8AF8F0051D20B /* feat_iosTests.swift */; };
 		28A6F0E12BF8AF900051D20B /* feat_iosUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28A6F0E02BF8AF900051D20B /* feat_iosUITests.swift */; };
 		28A6F0E32BF8AF900051D20B /* feat_iosUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28A6F0E22BF8AF900051D20B /* feat_iosUITestsLaunchTests.swift */; };
+		28A6F0FA2BF8B0650051D20B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 28A6F0F02BF8B0650051D20B /* Assets.xcassets */; };
+		28A6F0FB2BF8B0650051D20B /* AppColors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 28A6F0F12BF8B0650051D20B /* AppColors.xcassets */; };
+		28A6F0FC2BF8B0650051D20B /* Manrope-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 28A6F0F22BF8B0650051D20B /* Manrope-Bold.ttf */; };
+		28A6F0FD2BF8B0650051D20B /* Manrope-ExtraBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 28A6F0F32BF8B0650051D20B /* Manrope-ExtraBold.ttf */; };
+		28A6F0FE2BF8B0650051D20B /* Manrope-ExtraLight.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 28A6F0F42BF8B0650051D20B /* Manrope-ExtraLight.ttf */; };
+		28A6F0FF2BF8B0650051D20B /* Manrope-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 28A6F0F52BF8B0650051D20B /* Manrope-Light.ttf */; };
+		28A6F1002BF8B0650051D20B /* Manrope-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 28A6F0F62BF8B0650051D20B /* Manrope-Medium.ttf */; };
+		28A6F1012BF8B0650051D20B /* Manrope-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 28A6F0F72BF8B0650051D20B /* Manrope-Regular.ttf */; };
+		28A6F1022BF8B0650051D20B /* Manrope-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 28A6F0F82BF8B0650051D20B /* Manrope-SemiBold.ttf */; };
+		28A6F1062BF8B5C90051D20B /* OnboardingHomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28A6F1052BF8B5C90051D20B /* OnboardingHomeView.swift */; };
+		28A6F1092BF8B6330051D20B /* AppFonts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28A6F1082BF8B6330051D20B /* AppFonts.swift */; };
+		28F533292BF8BCD300D1CA00 /* AppColors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28F533282BF8BCD300D1CA00 /* AppColors.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,7 +50,6 @@
 		28A6F0C22BF8AF8D0051D20B /* feat_iosApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = feat_iosApp.swift; sourceTree = "<group>"; };
 		28A6F0C42BF8AF8E0051D20B /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		28A6F0C62BF8AF8E0051D20B /* Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
-		28A6F0C82BF8AF8F0051D20B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		28A6F0CA2BF8AF8F0051D20B /* feat_ios.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = feat_ios.entitlements; sourceTree = "<group>"; };
 		28A6F0CC2BF8AF8F0051D20B /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		28A6F0D22BF8AF8F0051D20B /* feat-iosTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "feat-iosTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -47,6 +57,19 @@
 		28A6F0DC2BF8AF8F0051D20B /* feat-iosUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "feat-iosUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		28A6F0E02BF8AF900051D20B /* feat_iosUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = feat_iosUITests.swift; sourceTree = "<group>"; };
 		28A6F0E22BF8AF900051D20B /* feat_iosUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = feat_iosUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		28A6F0F02BF8B0650051D20B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		28A6F0F12BF8B0650051D20B /* AppColors.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = AppColors.xcassets; sourceTree = "<group>"; };
+		28A6F0F22BF8B0650051D20B /* Manrope-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Manrope-Bold.ttf"; sourceTree = "<group>"; };
+		28A6F0F32BF8B0650051D20B /* Manrope-ExtraBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Manrope-ExtraBold.ttf"; sourceTree = "<group>"; };
+		28A6F0F42BF8B0650051D20B /* Manrope-ExtraLight.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Manrope-ExtraLight.ttf"; sourceTree = "<group>"; };
+		28A6F0F52BF8B0650051D20B /* Manrope-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Manrope-Light.ttf"; sourceTree = "<group>"; };
+		28A6F0F62BF8B0650051D20B /* Manrope-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Manrope-Medium.ttf"; sourceTree = "<group>"; };
+		28A6F0F72BF8B0650051D20B /* Manrope-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Manrope-Regular.ttf"; sourceTree = "<group>"; };
+		28A6F0F82BF8B0650051D20B /* Manrope-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Manrope-SemiBold.ttf"; sourceTree = "<group>"; };
+		28A6F1052BF8B5C90051D20B /* OnboardingHomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingHomeView.swift; sourceTree = "<group>"; };
+		28A6F1082BF8B6330051D20B /* AppFonts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppFonts.swift; sourceTree = "<group>"; };
+		28F533272BF8BC1200D1CA00 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		28F533282BF8BCD300D1CA00 /* AppColors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppColors.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,12 +120,14 @@
 		28A6F0C12BF8AF8D0051D20B /* feat-ios */ = {
 			isa = PBXGroup;
 			children = (
+				28F533272BF8BC1200D1CA00 /* Info.plist */,
 				28A6F0C22BF8AF8D0051D20B /* feat_iosApp.swift */,
-				28A6F0C42BF8AF8E0051D20B /* ContentView.swift */,
-				28A6F0C62BF8AF8E0051D20B /* Item.swift */,
-				28A6F0C82BF8AF8F0051D20B /* Assets.xcassets */,
 				28A6F0CA2BF8AF8F0051D20B /* feat_ios.entitlements */,
+				28A6F1032BF8B3A70051D20B /* Onboarding */,
+				28A6F0EF2BF8B0230051D20B /* Resources */,
 				28A6F0CB2BF8AF8F0051D20B /* Preview Content */,
+				28A6F1072BF8B6220051D20B /* Support */,
+				28A6F1042BF8B4060051D20B /* _ Extra */,
 			);
 			path = "feat-ios";
 			sourceTree = "<group>";
@@ -130,6 +155,56 @@
 				28A6F0E22BF8AF900051D20B /* feat_iosUITestsLaunchTests.swift */,
 			);
 			path = "feat-iosUITests";
+			sourceTree = "<group>";
+		};
+		28A6F0EF2BF8B0230051D20B /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				28A6F0F12BF8B0650051D20B /* AppColors.xcassets */,
+				28A6F0F02BF8B0650051D20B /* Assets.xcassets */,
+				28A6F0F92BF8B0650051D20B /* Fonts */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		28A6F0F92BF8B0650051D20B /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				28A6F0F22BF8B0650051D20B /* Manrope-Bold.ttf */,
+				28A6F0F32BF8B0650051D20B /* Manrope-ExtraBold.ttf */,
+				28A6F0F42BF8B0650051D20B /* Manrope-ExtraLight.ttf */,
+				28A6F0F52BF8B0650051D20B /* Manrope-Light.ttf */,
+				28A6F0F62BF8B0650051D20B /* Manrope-Medium.ttf */,
+				28A6F0F72BF8B0650051D20B /* Manrope-Regular.ttf */,
+				28A6F0F82BF8B0650051D20B /* Manrope-SemiBold.ttf */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
+		28A6F1032BF8B3A70051D20B /* Onboarding */ = {
+			isa = PBXGroup;
+			children = (
+				28A6F1052BF8B5C90051D20B /* OnboardingHomeView.swift */,
+			);
+			path = Onboarding;
+			sourceTree = "<group>";
+		};
+		28A6F1042BF8B4060051D20B /* _ Extra */ = {
+			isa = PBXGroup;
+			children = (
+				28A6F0C42BF8AF8E0051D20B /* ContentView.swift */,
+				28A6F0C62BF8AF8E0051D20B /* Item.swift */,
+			);
+			path = "_ Extra";
+			sourceTree = "<group>";
+		};
+		28A6F1072BF8B6220051D20B /* Support */ = {
+			isa = PBXGroup;
+			children = (
+				28A6F1082BF8B6330051D20B /* AppFonts.swift */,
+				28F533282BF8BCD300D1CA00 /* AppColors.swift */,
+			);
+			path = Support;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -236,8 +311,16 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				28A6F1022BF8B0650051D20B /* Manrope-SemiBold.ttf in Resources */,
+				28A6F0FD2BF8B0650051D20B /* Manrope-ExtraBold.ttf in Resources */,
+				28A6F0FE2BF8B0650051D20B /* Manrope-ExtraLight.ttf in Resources */,
+				28A6F0FF2BF8B0650051D20B /* Manrope-Light.ttf in Resources */,
+				28A6F0FC2BF8B0650051D20B /* Manrope-Bold.ttf in Resources */,
+				28A6F0FA2BF8B0650051D20B /* Assets.xcassets in Resources */,
+				28A6F1012BF8B0650051D20B /* Manrope-Regular.ttf in Resources */,
 				28A6F0CD2BF8AF8F0051D20B /* Preview Assets.xcassets in Resources */,
-				28A6F0C92BF8AF8F0051D20B /* Assets.xcassets in Resources */,
+				28A6F1002BF8B0650051D20B /* Manrope-Medium.ttf in Resources */,
+				28A6F0FB2BF8B0650051D20B /* AppColors.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -263,7 +346,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				28A6F0C52BF8AF8E0051D20B /* ContentView.swift in Sources */,
+				28A6F1092BF8B6330051D20B /* AppFonts.swift in Sources */,
 				28A6F0C72BF8AF8E0051D20B /* Item.swift in Sources */,
+				28F533292BF8BCD300D1CA00 /* AppColors.swift in Sources */,
+				28A6F1062BF8B5C90051D20B /* OnboardingHomeView.swift in Sources */,
 				28A6F0C32BF8AF8D0051D20B /* feat_iosApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -353,6 +439,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				INFOPLIST_FILE = "";
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
@@ -408,6 +495,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				INFOPLIST_FILE = "";
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
@@ -428,6 +516,7 @@
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "feat-ios/Info.plist";
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
@@ -443,10 +532,11 @@
 				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 14.0;
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "novinfard.feat-ios";
+				PRODUCT_BUNDLE_IDENTIFIER = "feat.feat-ios";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = auto;
-				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -466,6 +556,7 @@
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "feat-ios/Info.plist";
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
@@ -481,10 +572,11 @@
 				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 14.0;
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "novinfard.feat-ios";
+				PRODUCT_BUNDLE_IDENTIFIER = "feat.feat-ios";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = auto;
-				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";

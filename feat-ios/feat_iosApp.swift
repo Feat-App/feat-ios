@@ -25,7 +25,7 @@ struct feat_iosApp: App {
 
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            OnboardingHomeView()
         }
         .modelContainer(sharedModelContainer)
     }
