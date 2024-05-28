@@ -26,6 +26,7 @@
 		28A6F1062BF8B5C90051D20B /* OnboardingHomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28A6F1052BF8B5C90051D20B /* OnboardingHomeView.swift */; };
 		28A6F1092BF8B6330051D20B /* AppFonts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28A6F1082BF8B6330051D20B /* AppFonts.swift */; };
 		28F533292BF8BCD300D1CA00 /* AppColors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28F533282BF8BCD300D1CA00 /* AppColors.swift */; };
+		28F5332B2BF8CB9500D1CA00 /* OnboardingMenuItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28F5332A2BF8CB9500D1CA00 /* OnboardingMenuItemView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -70,6 +71,7 @@
 		28A6F1082BF8B6330051D20B /* AppFonts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppFonts.swift; sourceTree = "<group>"; };
 		28F533272BF8BC1200D1CA00 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		28F533282BF8BCD300D1CA00 /* AppColors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppColors.swift; sourceTree = "<group>"; };
+		28F5332A2BF8CB9500D1CA00 /* OnboardingMenuItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingMenuItemView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -185,6 +187,7 @@
 			isa = PBXGroup;
 			children = (
 				28A6F1052BF8B5C90051D20B /* OnboardingHomeView.swift */,
+				28F5332A2BF8CB9500D1CA00 /* OnboardingMenuItemView.swift */,
 			);
 			path = Onboarding;
 			sourceTree = "<group>";
@@ -349,6 +352,7 @@
 				28A6F1092BF8B6330051D20B /* AppFonts.swift in Sources */,
 				28A6F0C72BF8AF8E0051D20B /* Item.swift in Sources */,
 				28F533292BF8BCD300D1CA00 /* AppColors.swift in Sources */,
+				28F5332B2BF8CB9500D1CA00 /* OnboardingMenuItemView.swift in Sources */,
 				28A6F1062BF8B5C90051D20B /* OnboardingHomeView.swift in Sources */,
 				28A6F0C32BF8AF8D0051D20B /* feat_iosApp.swift in Sources */,
 			);

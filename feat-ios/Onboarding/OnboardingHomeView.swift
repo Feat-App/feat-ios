@@ -13,7 +13,21 @@ struct OnboardingHomeView: View {
             Text("Feat")
                 .font(AppFonts.font(style: .bold, size: 60))
                 .foregroundColor(.black)
-        }.padding(29)
+
+            Text("Join for free and start tracking your nutrition in the easiest way.")
+                .multilineTextAlignment(.center)
+                .font(AppFonts.font(style: .regular, size: 16))
+                .foregroundColor(.gray3)
+                .padding(10)
+
+            OnboardingMenuItemView(viewModel: .init(title: "Sign up with Google", iconName: ""))
+        }
+        .padding(29)
+        .frame(
+            maxWidth: .infinity,
+            maxHeight: .infinity
+        )
+        .background(Color.gray5)
     }
 }
 
