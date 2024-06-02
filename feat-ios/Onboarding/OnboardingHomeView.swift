@@ -32,6 +32,21 @@ struct OnboardingHomeView: View {
                 Spacer()
                     .frame(height: 18)
             }
+
+            HStack {
+                Text("Already have an account? ")
+                    .foregroundColor(.gray3)
+                    .font(AppFonts.font(style: .regular, size: 16))
+                Text("Sign in here")
+                    .foregroundColor(.blueLight)
+                    .font(AppFonts.font(style: .regular, size: 16))
+                    .onTapGesture {
+                        // Add action for "Sign in here" tap
+                        print("Sign in tapped")
+                    }
+            }
+            .multilineTextAlignment(.center)
+            .padding(10)
         }
         .padding(29)
         .frame(
