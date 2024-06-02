@@ -20,7 +20,12 @@ struct OnboardingHomeView: View {
                 .foregroundColor(.gray3)
                 .padding(10)
 
-            OnboardingMenuItemView(viewModel: .init(title: "Sign up with Google", iconName: ""))
+            OnboardingMenuItemView(
+                viewModel: .init(
+                    title: "Sign up with Google",
+                    icon: .googleLogo
+                )
+            )
         }
         .padding(29)
         .frame(
