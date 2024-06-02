@@ -16,9 +16,15 @@ struct OnboardingHomeView: View {
 
     var body: some View {
         VStack {
-            Text("Feat")
-                .font(AppFonts.font(style: .bold, size: 60))
-                .foregroundColor(.black)
+            VStack {
+                Spacer()
+
+                Text("Feat")
+                    .font(AppFonts.font(style: .bold, size: 60))
+                    .foregroundColor(.black)
+
+                Spacer()
+            }
 
             Text("Join for free and start tracking your nutrition in the easiest way.")
                 .multilineTextAlignment(.center)
