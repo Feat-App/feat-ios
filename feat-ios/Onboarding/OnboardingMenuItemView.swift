@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct OnboardingMenuItemViewModel {
+struct OnboardingMenuItemViewModel: Hashable {
     let title: String
     let icon: ImageResource?
 

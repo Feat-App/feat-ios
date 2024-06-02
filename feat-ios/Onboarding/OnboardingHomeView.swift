@@ -7,7 +7,13 @@
 
 import SwiftUI
 
+struct OnboardingHomeViewModel {
+    let menuItems: [OnboardingMenuItemViewModel]
+}
+
 struct OnboardingHomeView: View {
+    let viewModel: OnboardingHomeViewModel
+
     var body: some View {
         VStack {
             Text("Feat")
@@ -20,12 +26,12 @@ struct OnboardingHomeView: View {
                 .foregroundColor(.gray3)
                 .padding(10)
 
-            OnboardingMenuItemView(
-                viewModel: .init(
-                    title: "Sign up with Google",
-                    icon: .googleLogo
-                )
-            )
+            ForEach(viewModel.menuItems, id: \.self) { item in
+                OnboardingMenuItemView(viewModel: item)
+                
+                Spacer()
+                    .frame(height: 18)
+            }
         }
         .padding(29)
         .frame(
@@ -37,5 +43,33 @@ struct OnboardingHomeView: View {
 }
 
 #Preview {
-    OnboardingHomeView()
+    OnboardingHomeView(viewModel: .defaultModel)
+}
+
+extension OnboardingHomeViewModel {
+    static let defaultModel = OnboardingHomeViewModel(
+        menuItems: [.google, .apple, .facebook, .email]
+    )
+}
+
+extension OnboardingMenuItemViewModel {
+    static let google = Self(
+        title: "Sign up with Google",
+        icon: .googleLogo
+    )
+
+    static let apple = Self(
+        title: "Sign up with Apple",
+        icon: .appleLogo
+    )
+
+    static let facebook = Self(
+        title: "Sign up with Facebook",
+        icon: .facebookLogo
+    )
+
+    static let email = Self(
+        title: "Sign up with Email",
+        icon: .emailLogo
+    )
 }
