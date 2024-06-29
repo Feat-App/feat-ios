@@ -1,6 +1,6 @@
 import SwiftUI
 
-struct OnboardingMenuItemViewModel: Hashable, Identifiable {
+struct ButtonSubmitViewModel: Hashable, Identifiable {
     let id: UUID
     let title: String
     let icon: ImageResource?
@@ -20,7 +20,7 @@ struct OnboardingMenuItemViewModel: Hashable, Identifiable {
         self.action = action
     }
 
-    static func == (lhs: OnboardingMenuItemViewModel, rhs: OnboardingMenuItemViewModel) -> Bool {
+    static func == (lhs: Self, rhs: Self) -> Bool {
         lhs.title == rhs.title && lhs.icon == rhs.icon && lhs.destination == rhs.destination
     }
 
@@ -31,19 +31,21 @@ struct OnboardingMenuItemViewModel: Hashable, Identifiable {
     }
 }
 
-struct OnboardingMenuItemView: View {
-    private var viewModel: OnboardingMenuItemViewModel
+struct ButtonSubmitView: View {
+    private var viewModel: ButtonSubmitViewModel
 
     private let logoBoxWidth = 75.0
 
-    init(viewModel: OnboardingMenuItemViewModel) {
+    init(viewModel: ButtonSubmitViewModel) {
         self.viewModel = viewModel
     }
-    
+
     var body: some View {
         ZStack {
             HStack {
                 Text(viewModel.title)
+                    .font(AppFonts.font(style: .bold, size: 22))
+                    .foregroundColor(.white)
             }
             .padding(.horizontal, logoBoxWidth)
 
@@ -61,7 +63,7 @@ struct OnboardingMenuItemView: View {
         }
         .frame(height: 65)
         .frame(maxWidth: .infinity)
-        .background(.white)
+        .background(.black)
         .cornerRadius(100)
     }
 }
@@ -71,8 +73,8 @@ struct OnboardingMenuItemView: View {
         OnboardingMenuItemView(
             viewModel: .init(
                 title: "Sign up with Google",
-                icon: .googleLogo, 
-                destination: .onboardingEmailSignup, 
+                icon: .googleLogo,
+                destination: .onboardingEmailSignup,
                 action: nil
             )
         )

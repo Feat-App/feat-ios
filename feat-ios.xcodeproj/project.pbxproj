@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		28282EFE2C1D9F6200FBF0AD /* OnboardingDestinationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28282EFD2C1D9F6200FBF0AD /* OnboardingDestinationView.swift */; };
+		286674EE2C3019CA005E4967 /* ButtonSubmitView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 286674ED2C3019CA005E4967 /* ButtonSubmitView.swift */; };
 		28A6F0C32BF8AF8D0051D20B /* feat_iosApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28A6F0C22BF8AF8D0051D20B /* feat_iosApp.swift */; };
 		28A6F0C52BF8AF8E0051D20B /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28A6F0C42BF8AF8E0051D20B /* ContentView.swift */; };
 		28A6F0C72BF8AF8E0051D20B /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28A6F0C62BF8AF8E0051D20B /* Item.swift */; };
@@ -27,6 +29,8 @@
 		28A6F1092BF8B6330051D20B /* AppFonts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28A6F1082BF8B6330051D20B /* AppFonts.swift */; };
 		28F533292BF8BCD300D1CA00 /* AppColors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28F533282BF8BCD300D1CA00 /* AppColors.swift */; };
 		28F5332B2BF8CB9500D1CA00 /* OnboardingMenuItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28F5332A2BF8CB9500D1CA00 /* OnboardingMenuItemView.swift */; };
+		28FCF7D52C14B421002940C7 /* OnboardingEmailSignupView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28FCF7D42C14B421002940C7 /* OnboardingEmailSignupView.swift */; };
+		28FCF7D82C14B7B6002940C7 /* LabelFieldView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28FCF7D72C14B7B6002940C7 /* LabelFieldView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +51,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		28282EFD2C1D9F6200FBF0AD /* OnboardingDestinationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingDestinationView.swift; sourceTree = "<group>"; };
+		286674ED2C3019CA005E4967 /* ButtonSubmitView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonSubmitView.swift; sourceTree = "<group>"; };
 		28A6F0BF2BF8AF8D0051D20B /* feat-ios.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "feat-ios.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		28A6F0C22BF8AF8D0051D20B /* feat_iosApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = feat_iosApp.swift; sourceTree = "<group>"; };
 		28A6F0C42BF8AF8E0051D20B /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -72,6 +78,8 @@
 		28F533272BF8BC1200D1CA00 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		28F533282BF8BCD300D1CA00 /* AppColors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppColors.swift; sourceTree = "<group>"; };
 		28F5332A2BF8CB9500D1CA00 /* OnboardingMenuItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingMenuItemView.swift; sourceTree = "<group>"; };
+		28FCF7D42C14B421002940C7 /* OnboardingEmailSignupView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingEmailSignupView.swift; sourceTree = "<group>"; };
+		28FCF7D72C14B7B6002940C7 /* LabelFieldView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LabelFieldView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -126,6 +134,7 @@
 				28A6F0C22BF8AF8D0051D20B /* feat_iosApp.swift */,
 				28A6F0CA2BF8AF8F0051D20B /* feat_ios.entitlements */,
 				28A6F1032BF8B3A70051D20B /* Onboarding */,
+				28FCF7D62C14B793002940C7 /* General */,
 				28A6F0EF2BF8B0230051D20B /* Resources */,
 				28A6F0CB2BF8AF8F0051D20B /* Preview Content */,
 				28A6F1072BF8B6220051D20B /* Support */,
@@ -188,6 +197,8 @@
 			children = (
 				28A6F1052BF8B5C90051D20B /* OnboardingHomeView.swift */,
 				28F5332A2BF8CB9500D1CA00 /* OnboardingMenuItemView.swift */,
+				28FCF7D42C14B421002940C7 /* OnboardingEmailSignupView.swift */,
+				28282EFD2C1D9F6200FBF0AD /* OnboardingDestinationView.swift */,
 			);
 			path = Onboarding;
 			sourceTree = "<group>";
@@ -208,6 +219,15 @@
 				28F533282BF8BCD300D1CA00 /* AppColors.swift */,
 			);
 			path = Support;
+			sourceTree = "<group>";
+		};
+		28FCF7D62C14B793002940C7 /* General */ = {
+			isa = PBXGroup;
+			children = (
+				28FCF7D72C14B7B6002940C7 /* LabelFieldView.swift */,
+				286674ED2C3019CA005E4967 /* ButtonSubmitView.swift */,
+			);
+			path = General;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -350,10 +370,14 @@
 			files = (
 				28A6F0C52BF8AF8E0051D20B /* ContentView.swift in Sources */,
 				28A6F1092BF8B6330051D20B /* AppFonts.swift in Sources */,
+				28282EFE2C1D9F6200FBF0AD /* OnboardingDestinationView.swift in Sources */,
 				28A6F0C72BF8AF8E0051D20B /* Item.swift in Sources */,
 				28F533292BF8BCD300D1CA00 /* AppColors.swift in Sources */,
 				28F5332B2BF8CB9500D1CA00 /* OnboardingMenuItemView.swift in Sources */,
+				286674EE2C3019CA005E4967 /* ButtonSubmitView.swift in Sources */,
 				28A6F1062BF8B5C90051D20B /* OnboardingHomeView.swift in Sources */,
+				28FCF7D52C14B421002940C7 /* OnboardingEmailSignupView.swift in Sources */,
+				28FCF7D82C14B7B6002940C7 /* LabelFieldView.swift in Sources */,
 				28A6F0C32BF8AF8D0051D20B /* feat_iosApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

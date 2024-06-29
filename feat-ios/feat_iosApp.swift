@@ -1,10 +1,3 @@
-//
-//  feat_iosApp.swift
-//  feat-ios
-//
-//  Created by Soheil Novinfard on 18/05/2024.
-//
-
 import SwiftUI
 import SwiftData
 

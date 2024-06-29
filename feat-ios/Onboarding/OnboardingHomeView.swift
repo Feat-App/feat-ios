@@ -13,53 +13,71 @@ struct OnboardingHomeViewModel {
 
 struct OnboardingHomeView: View {
     let viewModel: OnboardingHomeViewModel
+   
+    // Dynamic Navigation
+    @State private var isActive = false
+    @State private var destinationView: OnboardingDestinationView?
 
     var body: some View {
-        VStack {
+        NavigationView {
             VStack {
-                Spacer()
+                VStack {
+                    Spacer()
 
-                Text("Feat")
-                    .font(AppFonts.font(style: .bold, size: 60))
-                    .foregroundColor(.black)
+                    Text("Feat")
+                        .font(AppFonts.font(style: .bold, size: 60))
+                        .foregroundColor(.black)
 
-                Spacer()
-            }
+                    Spacer()
+                }
 
-            Text("Join for free and start tracking your nutrition in the easiest way.")
-                .multilineTextAlignment(.center)
-                .font(AppFonts.font(style: .regular, size: 16))
-                .foregroundColor(.gray3)
-                .padding(10)
-
-            ForEach(viewModel.menuItems, id: \.self) { item in
-                OnboardingMenuItemView(viewModel: item)
-                
-                Spacer()
-                    .frame(height: 18)
-            }
-
-            HStack {
-                Text("Already have an account? ")
+                Text("Join for free and start tracking your nutrition in the easiest way.")
+                    .multilineTextAlignment(.center)
+                    .font(AppFonts.font(style: .regular, size: 16))
                     .foregroundColor(.gray3)
-                    .font(AppFonts.font(style: .regular, size: 16))
-                Text("Sign in here")
-                    .foregroundColor(.blueLight)
-                    .font(AppFonts.font(style: .regular, size: 16))
-                    .onTapGesture {
-                        // Add action for "Sign in here" tap
-                        print("Sign in tapped")
+                    .padding(10)
+
+                ForEach(viewModel.menuItems) { item in
+                    Button {
+                        // Set the destination view and activate the navigation link
+                        destinationView = item.destination
+                        isActive = true
+                    } label: {
+                        OnboardingMenuItemView(viewModel: item)
                     }
+
+                    Spacer()
+                        .frame(height: 18)
+                }
+
+                HStack {
+                    Text("Already have an account? ")
+                        .foregroundColor(.gray3)
+                        .font(AppFonts.font(style: .regular, size: 16))
+                    
+                    Text("Sign in here")
+                        .foregroundColor(.blueLight)
+                        .font(AppFonts.font(style: .regular, size: 16))
+                        .onTapGesture {
+                            destinationView = .onboardingEmailSignup
+                            isActive = true
+                        }
+                }
+                .multilineTextAlignment(.center)
+                .padding(10)
             }
-            .multilineTextAlignment(.center)
-            .padding(10)
+            .padding(29)
+            .frame(
+                maxWidth: .infinity,
+                maxHeight: .infinity
+            )
+            .background(Color.gray5)
+            .background(
+                NavigationLink(destination: destinationView?.view, isActive: $isActive) {
+                    destinationView?.view
+                }
+            )
         }
-        .padding(29)
-        .frame(
-            maxWidth: .infinity,
-            maxHeight: .infinity
-        )
-        .background(Color.gray5)
     }
 }
 
@@ -76,21 +94,25 @@ extension OnboardingHomeViewModel {
 extension OnboardingMenuItemViewModel {
     static let google = Self(
         title: "Sign up with Google",
-        icon: .googleLogo
+        icon: .googleLogo,
+        destination: nil
     )
 
     static let apple = Self(
         title: "Sign up with Apple",
-        icon: .appleLogo
+        icon: .appleLogo,
+        destination: nil
     )
 
     static let facebook = Self(
         title: "Sign up with Facebook",
-        icon: .facebookLogo
+        icon: .facebookLogo,
+        destination: nil
     )
 
     static let email = Self(
         title: "Sign up with Email",
-        icon: .emailLogo
+        icon: .emailLogo,
+        destination: .onboardingEmailSignup
     )
 }
