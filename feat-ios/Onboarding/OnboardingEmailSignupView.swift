@@ -12,15 +12,10 @@ struct OnboardingEmailSignupView: View {
                 
                 Spacer()
                     .frame(maxHeight: .infinity)
+                
                 NavigationLink(destination: OnboardingDestinationView.onboardingEmailSignup.view) {
                     ButtonSubmitView(viewModel: .next)
                 }
-
-//                Button {
-//                    OnboardingDestinationView.onboardingEmailSignup
-//                } label: {
-//                    ButtonSubmitView(viewModel: .next)
-//                }
             }
             .padding(30)
             .background(Color.gray5)
