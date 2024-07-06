@@ -2,7 +2,7 @@ import SwiftUI
 
 struct OnboardingEmailSignupView: View {
     var body: some View {
-            VStack(spacing: 18) {
+            VStack(spacing: 0) {
                 Spacer()
                     .frame(maxHeight: .infinity)
                 
