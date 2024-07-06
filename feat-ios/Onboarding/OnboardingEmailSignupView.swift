@@ -1,6 +1,8 @@
 import SwiftUI
 
 struct OnboardingEmailSignupView: View {
+    @State private var navigateToDetail = false
+
     var body: some View {
             VStack(spacing: 0) {
                 Spacer()
@@ -13,8 +15,19 @@ struct OnboardingEmailSignupView: View {
                 Spacer()
                     .frame(maxHeight: .infinity)
                 
-                NavigationLink(destination: OnboardingDestinationView.onboardingEmailSignup.view) {
-                    ButtonSubmitView(viewModel: .next)
+                NavigationLink(
+                    destination: OnboardingDestinationView.onboardingEmailSignup.view,
+                    isActive: $navigateToDetail
+                ) {
+                    ButtonSubmitView(
+                        viewModel: .init(
+                            title: "Next",
+                            destination: .onboardingEmailSignup,
+                            action: ({
+                                navigateToDetail = true
+                            })
+                        )
+                    )
                 }
             }
             .padding(30)

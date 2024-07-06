@@ -33,6 +33,7 @@ struct ButtonSubmitViewModel: Hashable, Identifiable {
 
 struct ButtonSubmitView: View {
     private var viewModel: ButtonSubmitViewModel
+    @State private var isPressed: Bool = false
 
     private let logoBoxWidth = 75.0
 
@@ -41,30 +42,49 @@ struct ButtonSubmitView: View {
     }
 
     var body: some View {
-        ZStack {
-            HStack {
-                Text(viewModel.title)
-                    .font(AppFonts.font(style: .bold, size: 22))
-                    .foregroundColor(.white)
-            }
-            .padding(.horizontal, logoBoxWidth)
-
-            if let icon = viewModel.icon {
+        Button(action: {
+            viewModel.action?()
+        }, label: {
+            ZStack {
                 HStack {
-                    HStack(alignment: .center) {
-                        Image(icon)
-                    }
-                    .frame(width: logoBoxWidth)
+                    Text(viewModel.title)
+                        .font(AppFonts.font(style: .bold, size: 22))
+                        .foregroundColor(.white)
+                }
+                .padding(.horizontal, logoBoxWidth)
 
-                    Spacer()
-                        .frame(maxWidth: .infinity)
+                if let icon = viewModel.icon {
+                    HStack {
+                        HStack(alignment: .center) {
+                            Image(icon)
+                        }
+                        .frame(width: logoBoxWidth)
+
+                        Spacer()
+                            .frame(maxWidth: .infinity)
+                    }
                 }
             }
-        }
-        .frame(height: 65)
-        .frame(maxWidth: .infinity)
-        .background(.black)
-        .cornerRadius(100)
+            .frame(height: 65)
+            .frame(maxWidth: .infinity)
+            .background(.black)
+            .cornerRadius(100)
+            .scaleEffect(isPressed ? 0.95 : 1.0)
+        })
+        .buttonStyle(.plain)
+        .simultaneousGesture(
+            DragGesture(minimumDistance: 0)
+                .onChanged({ _ in
+                    withAnimation {
+                        isPressed = true
+                    }
+                })
+                .onEnded({ _ in
+                    withAnimation {
+                        isPressed = false
+                    }
+                })
+        )
     }
 }
 
